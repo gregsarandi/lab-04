@@ -45,7 +45,7 @@ if __name__ == '__main__':
         #replace user with your USC username in all subscriptions
         client.publish("sarandi/ipinfo", f"{ip_address}")
         print("Publishing ip address")
-        time.sleep(4)
+        time.sleep(2)
 
         #get date and time 
         now = datetime.now() #https://www.programiz.com/python-programming/datetime/current-datetime
@@ -55,8 +55,8 @@ if __name__ == '__main__':
         #publish date and time in their own topics
         client.publish("currentdate", f"{date}")
         print("Publishing current date")
-        time.sleep(4) #probably not needed
+        time.sleep(2) #probably not needed
         client.publish("currenttime", f"{time_}")
         print("Publishing current time")
-        time.sleep(4)
+        time.sleep(2)
         """your code here"""
